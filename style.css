@@ -1,0 +1,16 @@
+/* body,
+div,
+header,
+footer {
+    border: 1px solid blue;
+} */
+.container {
+    display: flex;
+    margin: 8px;
+    padding: 8px;
+    border: 1px solid blue;
+}
+
+.section {
+    border: 1px solid orange;
+}
