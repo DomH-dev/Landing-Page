@@ -1,16 +1,66 @@
-/* body,
-div,
-header,
-footer {
-    border: 1px solid blue;
-} */
+.section.one,.section.two,.section.three,.section.four {
+    /* This is used to seperate the main content sections and will be used to size them later on seperately to the copyright footer */
+    margin: 8px;
+    display: flex;
+    border: 1px solid orange;
+    
+}
+
 .container {
+    /* Generic container - borders for debugging and flexbox */
     display: flex;
     margin: 8px;
     padding: 8px;
     border: 1px solid blue;
 }
 
-.section {
-    border: 1px solid orange;
+.section.one {
+    flex-direction: column;
+    background: #1F2937;
 }
+
+.container.header {
+    
+}
+
+.container.summary {
+
+}
+
+.container.signup {
+    flex-direction: column;
+}
+
+.link {
+    margin: 5px;
+}
+
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.main.text {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.secondary.text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #3882F6;
+    color: white;
+    width: 100px;
+    height: 25px;
+}
+
