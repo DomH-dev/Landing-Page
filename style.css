@@ -1,16 +1,18 @@
 /* General */ 
-
+    body {
+        background: rgb(47, 47, 47);
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     .section.one,.section.two,.section.three,.section.four {
         /* This is used to seperate the main content sections and will be used to size them later on seperately to the copyright footer */
-        margin: 4px;
         display: flex;
-        border: 1px solid orange;   
     }
 
     .container {
         /* Generic container - borders for debugging and flexbox */
         display: flex;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
 
     .text {
@@ -40,18 +42,18 @@
 
     .two {
         flex-direction: column;
-        background: #1F2937;
+        background:rgb(255, 255, 255);
         background-size: cover;
-        padding-left: 25%;
-        padding-right: 25%;
-        align-items: stretch; /* Make flex items stretch to fill the container */
-        justify-content: stretch; /* Also make flex items stretch to fill the container */
+        padding-left: 15%;
+        padding-right: 15%;
+        align-items: center;
     }
 
 .container.header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 8px;
     margin-bottom: 24px;
 }
@@ -114,27 +116,35 @@
     }
 
 /* Section 2 */
+    .information.header {
+        display: flex;
+        font-size: 36px;
+        font-weight: 900;
+        color: #1F2937;
+        margin-top: 24px;
+    }
+
     .container.boxes {
         display: flex;
         flex-direction: row;
-
     }
 
     .boxes {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        padding: 24px;
+        width: 80%;
     }
 
     .box {
-        flex:  1 1 50%; 
-        border:  2px solid blue;
+        border:  4px solid #3b82f6;
         border-radius: 16px;
-        margin:  8px;
-        min-height: ;
+        aspect-ratio:  1 / 1; /* This ensures the box stays square */
+        margin-bottom: 8px;
     }
-    .box-text {
-        flex:  1 0 50%; /* Adjust the flex-basis as needed */
-        margin: 8px;
 
+    .sub {
+        text-align: justify;
+        text-align-last: center;
+        color: #616a77;
     }
